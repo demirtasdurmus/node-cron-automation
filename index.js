@@ -37,12 +37,12 @@ cron.schedule('* * * * * *', function () {
         })
 });
 
-
-
+// add a get route to check if the server is running
 app.get('/', (req, res) => {
     res.send('Hello World!')
-})
+});
 
+// set up server
 app.listen(process.env.PORT, () => {
     console.log(`Server is awake on port ${process.env.PORT}:${process.env.NODE_ENV}`)
-})
+});
