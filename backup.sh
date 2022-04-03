@@ -1,7 +1,3 @@
 #!/bin/bash
 
-#PGPASSWORD="${1}" pg_dump -U postgres -p 5432 -Fc -d ${2} > "${3}"
-
-#echo Hello, World!
-
-PGPASSWORD="    " pg_dump -U postgres -p 5432 -Fc -d ${1} > "${2}"
+PGPASSWORD=${1} pg_dump -h ${2} -U ${3} -p ${4} -Fc -d ${5} > ${6}
