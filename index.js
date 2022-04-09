@@ -88,7 +88,7 @@ const backupDatabase = () => {
             if (stderr) {
                 return console.error(`stderr: ${stderr}`);
             };
-            console.log(`Backed up ${dbName} at ${date.toLocaleString()} successfully: ${stdout}`);
+            console.log(`Created a backup of ${dbName} at ${date.toLocaleString()} successfully: ${stdout}`);
         })
 };
 
